@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WMPLib;
 
 namespace _48_Secret_Jam_Joeyloveswaffles
 {
     public partial class Form1 : Form
     {
+
+        //WindowsMediaPlayer player = new WindowsMediaPlayer();
         // This integer variable keeps track of the remaining time.
         int timeLeft = 20;
         Random random = new Random();
@@ -20,12 +23,12 @@ namespace _48_Secret_Jam_Joeyloveswaffles
         int timeWaited;
         int greetAmount = 0;
 
-        System.Media.SoundPlayer startSoundPlayer = new System.Media.SoundPlayer(@"C:\Users\Joeyl\OneDrive\Documents\Visual Studio 2015\Projects\48 Secret Jam Joeyloveswaffles\48 Secret Jam Joeyloveswaffles\Resources\HidleyHo.wav");
-
         public Form1()
         {
             InitializeComponent();
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            //player.URL = "HidleyHo.wav";
+            
         }
         
         public void randomScreenLocation()
@@ -72,7 +75,7 @@ namespace _48_Secret_Jam_Joeyloveswaffles
                 timeLabel.Text = "Time Left: 20 Seconds";
                 timer1.Start();
             }
-            startSoundPlayer.Play();
+            //player.controls.play();
         }
 
         private void button1_Click(object sender, EventArgs e)

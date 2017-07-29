@@ -73,9 +73,9 @@ namespace _48_Secret_Jam_Joeyloveswaffles.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Simpsons_Door {
+        internal static System.Drawing.Bitmap SimpsonsDoor {
             get {
-                object obj = ResourceManager.GetObject("Simpsons-Door", resourceCulture);
+                object obj = ResourceManager.GetObject("SimpsonsDoor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

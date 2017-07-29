@@ -34,6 +34,8 @@
             this.flanders_button = new System.Windows.Forms.Button();
             this.flanders_greeted = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -89,7 +91,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::_48_Secret_Jam_Joeyloveswaffles.Properties.Resources.Simpsons_Door;
+            this.BackgroundImage = global::_48_Secret_Jam_Joeyloveswaffles.Properties.Resources.SimpsonsDoor;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1006, 721);
             this.Controls.Add(this.button1);
@@ -99,6 +101,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Neighbor Greeter";
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,6 +113,7 @@
         private System.Windows.Forms.Button flanders_button;
         private System.Windows.Forms.Label flanders_greeted;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.BindingSource bindingSource1;
     }
 }
 
