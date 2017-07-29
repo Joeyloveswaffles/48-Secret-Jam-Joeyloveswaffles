@@ -74,5 +74,14 @@ namespace _48_Secret_Jam_Joeyloveswaffles
             }
             startSoundPlayer.Play();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            timeLeft = 20;
+            timeLabel.Text = "Time Left: 20 Seconds";
+            greetAmount = 0;
+            flanders_greeted.Text = "Flanders Shooed: 0";
+
+        }
     }
 }

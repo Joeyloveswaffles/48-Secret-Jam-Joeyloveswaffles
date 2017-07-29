@@ -33,6 +33,7 @@
             this.timeLabel = new System.Windows.Forms.Label();
             this.flanders_button = new System.Windows.Forms.Button();
             this.flanders_greeted = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // timer1
@@ -73,6 +74,16 @@
             this.flanders_greeted.TabIndex = 5;
             this.flanders_greeted.Text = "Flanders Shooed: 0";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(905, 9);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(89, 28);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Reset";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -81,6 +92,7 @@
             this.BackgroundImage = global::_48_Secret_Jam_Joeyloveswaffles.Properties.Resources.Simpsons_Door;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1006, 721);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.flanders_greeted);
             this.Controls.Add(this.flanders_button);
             this.Controls.Add(this.timeLabel);
@@ -97,6 +109,7 @@
         private System.Windows.Forms.Label timeLabel;
         private System.Windows.Forms.Button flanders_button;
         private System.Windows.Forms.Label flanders_greeted;
+        private System.Windows.Forms.Button button1;
     }
 }
 
