@@ -14,7 +14,7 @@ namespace _48_Secret_Jam_Joeyloveswaffles
     public partial class Form1 : Form
     {
 
-        //WindowsMediaPlayer player = new WindowsMediaPlayer();
+        WindowsMediaPlayer player = new WindowsMediaPlayer();
         // This integer variable keeps track of the remaining time.
         int timeLeft = 20;
         Random random = new Random();
@@ -27,7 +27,7 @@ namespace _48_Secret_Jam_Joeyloveswaffles
         {
             InitializeComponent();
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            //player.URL = "HidleyHo.wav";
+            player.URL = "HidleyHo.wav";
             
         }
         
@@ -75,7 +75,7 @@ namespace _48_Secret_Jam_Joeyloveswaffles
                 timeLabel.Text = "Time Left: 20 Seconds";
                 timer1.Start();
             }
-            //player.controls.play();
+            player.controls.play();
         }
 
         private void button1_Click(object sender, EventArgs e)
